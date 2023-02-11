@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add CSS for animation */
+      @keyframes slideInFromLeft {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      
+      /* Apply animation to the apology text */
+      .apology-text {
+        animation: slideInFromLeft 2s ease-out;
+        font-size: 24px;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: aqua;">
+    <!-- Add apology text with animation -->
+    <div class="apology-text">
+      <p>Dear Parents,</p>
+      <p>I am sorry for my actions and for any trouble I may have caused. I understand the importance of following the rules and making good choices, and I am committed to doing better in the future.</p>
+      <p>Sincerely,</p>
+      <p>[Your Name]</p>
+    </div>
+  </body>
+</html>

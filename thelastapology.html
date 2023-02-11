@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add styles for the background and text */
+      body {
+        background-color: lightpink;
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+      
+      h1 {
+        color: darkred;
+        font-size: 36px;
+        margin-top: 50px;
+      }
+      
+      p {
+        color: darkred;
+        font-size: 24px;
+        margin-top: 20px;
+      }
+      
+      /* Add keyframes for the heart animation */
+      @keyframes beat {
+        0% {
+          transform: scale(1);
+        }
+        20% {
+          transform: scale(1.5);
+        }
+        40% {
+          transform: scale(1);
+        }
+      }
+      
+      /* Add styles for the heart animation */
+      .heart {
+        animation: beat 2s infinite;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+      }
+      
+      .heart:before,
+      .heart:after {
+        content: "";
+        background-color: darkred;
+        border-radius: 25px 25px 0;
+        position: absolute;
+      }
+      
+      .heart:before {
+        height: 25px;
+        left: 25px;
+        top: 0;
+        transform: rotate(45deg);
+        width: 25px;
+      }
+      
+      .heart:after {
+        height: 25px;
+        left: 0;
+        top: 25px;
+        transform: rotate(-45deg);
+        width: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Add title and apology text -->
+    <h1>Apology to My Parents</h1>
+    <p>Dear Mom and Dad,</p>
+    <p>I am so sorry for my actions and for any trouble I may have caused. I know how much I hurt you and I want to make it right. .</p> I know you were worried and I feel terrible for causing you any stress. I understand how important it is for me to be responsible and keep you informed about my whereabouts.
+
+    The truth is, I lost track of time and didn't realize how late it was getting. I should have called to let you know, and I'm truly sorry for not doing so. I promise that in the future, I will make a better effort to keep you informed and stay on schedule.
+    
+    Thank you for understanding and for always being there for me. I appreciate your love and support, and I hope you can forgive me for coming home late from basketball.
+    
+    Sincerely,</p>
+    <p>With all my love,</p>
+    <p>Tawana</p>
+    
+    <!-- Add heart animation -->
+    <div class="heart"></div>
+  </body>
+</html>
